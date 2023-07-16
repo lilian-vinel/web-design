@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1f2d927b8c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Lilian Vinel - Web Designer</title>
 </head>
@@ -16,7 +17,6 @@
             <img src="./assets/Photo CV2.png">
             <h1>Lilian Vinel</h1>
             <h2>Full Stack Web Developper</h2>
-            <!--button?-->
                 <div class="buttons">
                     <a>Get in Touch</a>
                     <a>My LinkedIn</a>
@@ -76,18 +76,67 @@
     <section id="portfolio">
         <h5>Some Past Projects</h5>
         <div class="proj">
+            <script type="text/javascript">
+                function enlarge(e){
+                    let divId = e.getAttribute("id");
+                    let enlargedDivId = divId + "." + divId;
+                    let enlargedDiv = document.getElementById(enlargedDivId);
+                    enlargedDiv.style.display ="block";
+                }
+            </script>
+            <div id="1" class="project" onclick="enlarge(this)">
+                <img class="leftImg" src="./assets/capstone1.png">
+                <h6>Capstone 1</h6>
+                <p>A website built using only html containing 5 pages and that explores most of the possibilities that html offers in terms of design.</p>
+                <div class="buttons">
+                    <a href="https://lilouvinel.github.io/capstone-1/">Go to Website</a>
+                </div>
+            </div>
+            <div class="project">
+                <img class="centerImg" src="./assets/capstone2.png" onclick="enlarge()">
+                <h6>Capstone 1</h6>
+                <p>A website built using only html containing 5 pages and that explores most of the possibilities that html offers in terms of design.</p>
+                <div class="buttons">
+                    <a>Go to Website</a>
+                </div>
+            </div>
+            <div class="project">
+                <img class="rightImg" src="./assets/bg1.png" onclick="enlarge()">
+                <h6>Capstone 1</h6>
+                <p>A website built using only html containing 5 pages and that explores most of the possibilities that html offers in terms of design.</p>
+                <div class="buttons">
+                    <a>Go to Website</a>
+                </div>
+            </div>
+        </div>
+    </section><!-- 
+    <div id="1.1" class="focus" style="display: none;">
+        <img src="./assets/capstone1.png">
+        <h6>Capstone 1</h6>
+        <p>A website built using only html containing 5 pages and that explores most of the possibilities that html offers in terms of design.</p>
+        <div class="buttons">
+            <a>Go to Website</a>
+        </div>
+    </div> -->
+    <section id="contact">
+        <div class="contactInfo">
             <div>
-                <img src="./assets/home-bg.jpg">
-                <h6>Project 1</h6>
+                <p class="h7">Let's Work <br><u>Together</u></p>
+                <hr>
+                <h4>My Contact Information:</h4>
+                <p class="info"><i class="fa-brands fa-whatsapp fa-2xl" style="margin-right:.5em; color: #ffffff;"></i>+49 1590 486 5384</p>
+                <p class="info"><i class="fa-regular fa-envelope fa-2xl" style="margin-right:.5em; color: #ffffff;"></i>lilian.vinel@gmail.com</p>
             </div>
             <div>
-                <img src="./assets/Photo CV2.png">
-                <h6>Project 2</h6>
-            </div>
-            <div>
-                <img src="./assets/bg1.png">
-                <h6>Project 3</h6>
-            </div>
+                <div class="profile">
+                    <img src="./assets/Photo-square.png">
+                        <div class="buttons">
+                            <a href="mailto:lilian.vinel@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i> Email Me</a>
+                            <a href="https://www.linkedin.com/in/lilian-vinel/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i> My LinkedIn</a>
+                        </div><a href="https://api.whatsapp.com/send?phone=4915904865384" target="_blank"></a>>test</a>
+                    </div>
+                </div>
+            </div>    
         </div>
     </section>
 </body>
