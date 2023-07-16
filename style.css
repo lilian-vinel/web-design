@@ -3,6 +3,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    text-decoration-line: none;
+}
+
 #home{
     display: flex;
     align-items: center;
@@ -10,7 +14,7 @@ body{
     border-top: 1vw solid #7C898B;
     border-bottom: 1vw solid #7C898B;
     width: 100%;
-    max-height: 94.6vh;
+    max-height: 56.25vw;
     padding: 0;
     margin: 0;
 }
@@ -31,7 +35,7 @@ body{
     border:.1vw solid #253439;
 }
 
-#home .profile h1{
+.profile h1{
     font-size: 2.75vw;
     font-family: 'Alice', serif;
     font-weight: 400;
@@ -39,7 +43,7 @@ body{
     color: #253439;
 }
 
-#home .profile h2{
+.profile h2{
     font-size: 1.68vw;
     color:#253439;
     font-family: 'Alice', serif;
@@ -53,10 +57,10 @@ body{
     flex-direction: row;
 }
 
-#home .buttons a{
+.buttons a{
     background-color: #253439;
     margin:2px;
-    color: white;
+    color: white !important;
     width: 100%;
     border-radius: 4px;
     font-weight: bold;
@@ -65,9 +69,9 @@ body{
     border:0.2vw solid #253439;
 }
 
-#home .buttons a:hover{
+.buttons a:hover{
     background-color: white;
-    color: #253439;
+    color: #253439 !important;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -127,6 +131,7 @@ h4{
     letter-spacing: .09vw;
     padding: 3.1vw 0 0 0.1vw;
     margin: 0;
+    color: white;
 }
 
 #resume p{
@@ -144,49 +149,179 @@ h4{
 
 #portfolio{
     text-align: center;
-    height: 1000px;
-    background-color: #423E3A;
+    background-color: white;
+    border-bottom: 1vw solid #7C898B;
+    padding: 0 1.5vw;
 }
 
 h5{
-    color: #F6F4F1;
+    color: #253439;
     font-family: 'Alice', serif;
     font-size: 4vw;
     margin: 0;
     font-weight: 400;
-    padding: 4vw 0 3vw 0;
+    padding: 0 0 3vw 0;
 }
 
 #portfolio .proj{
-    padding: 0 3vw 0 3vw;
     display: flex;
     flex-wrap: wrap;
+    gap: 3vw;
+    justify-content: center;
 }
 
-#portfolio .proj div{
-    padding: 0 2.7vw 0 2.7vw;
+#portfolio .proj .project{
+    margin: 0 0 3vw 0;
+    /*border-radius: 0.4vw;*/
+    transition: transform .2s;
+    text-align: center;
+    background-color: #253439;
+    width: 42vw;
+    border-bottom-left-radius: 10vw;
+    border-bottom-right-radius: 10vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px .5vw 1vw;
 }
 
 #portfolio .proj div img{
-    height: 25vw;
-    width: 25vw;
-    border-radius: 50%;
+    /* border: 0.1vw solid #7C898B; */
+    border-bottom: 0.1vw solid #7C898B;
+    width: 42vw;
+    height: 28vw;
+    /* padding: 1vw; */
 }
 
+/* #portfolio .proj div:nth-child(odd):hover{
+    transform: scale(1.75);
+    transform-origin: bottom left;
+}
+
+#portfolio .proj div:nth-child(even):hover{
+    transform: scale(1.75);
+    transform-origin: right;
+} */
+
 h6{
-    font-size: 2.2vw;
+    font-size: 1.5vw;
     font-family: 'Alice', sans-serif;
     font-weight: 600;
     letter-spacing: .09vw;
-    padding: 2vw 0 0 0.1vw;
+    padding: .3vw 0 0 0;
     margin: 0;
     color: white;
 }
 
+/* .focus{
+    z-index:0;
+    display : block;
+    visibility : visible;
+    left:25vw;
+    top:2vw;
+    position: fixed;
+    background-color: #253439;
+    text-align: center;
+    width: 50vw;
+}
+
+.focus img{
+    background-color: #253439;
+    width: 50vw;
+} */
+
 #portfolio p{
-    width: 25vw;
+    color: white;
+    font-size: 1vw;
+    margin:0.5vw 1.5vw 1.8vw 1.5vw;
+}
+
+#portfolio .buttons{
+    margin-bottom: 1.7vw;
+}
+
+#portfolio .buttons a{
+    border-color: white;
     color: white;
 }
+
+#portfolio .buttons a:hover{
+    background-color: white;
+    color: #253439;
+}
+
+/* INSPIRATION : https://laplaya.studio/*/
+
+#contact{
+    background-color: #423E3A;
+    padding: 4vw 7vw;
+}
+
+#contact .h7{
+    font-family: 'Alice', sans-serif;
+    font-size: 7vw;
+    color: white;
+    margin: 0 0 0.6em 0;
+}
+
+#contact h4{
+    margin-bottom: 1.3em;
+}
+
+#contact .contactInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact .contactInfo .info{
+    font-size: 1vw;
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+#contact div .profile{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+
+#contact .profile h1{
+    color: white;
+}
+
+#contact .profile img{
+    border-radius: 100%;/* make more zoomed in image*/
+    width: 18vw;
+    margin-bottom: 1em;
+}
+
+#contact .profile .buttons{
+    transition: transform .2s;
+}
+
+#contact .profile .buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    background-color: white;
+    color: #253439 !important;
+    border: .31vw solid #253439;
+    font-size: 1.7vw;
+    margin: 0 0 .1em 0;
+    padding: 1vw 0;
+    width: 30vw;
+    text-decoration-line: none !important;
+    border-radius: .5em;
+}
+
+#contact .profile .buttons a:hover{
+    background-color: #423E3A;
+    color: white !important;
+    border: .31vw solid white;
+}
+
 
 
 
