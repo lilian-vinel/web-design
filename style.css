@@ -1,84 +1,281 @@
+html{
+    background-color: #f6f8f8;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1400px;/* Pour Résolution 4k augmenter taille Body*/
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+h1,h2,h3,h4,h5,h6,.h7{
+    font-family: 'Alice', serif;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    max-height: 56.25vw;
+    padding: 0;
+    margin: 0;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile img{
+    border-top-right-radius: 47%;
+    border-top-left-radius: 47%;
+}
+
+.profile h1{
+    font-weight: 400;
+    color: #253439;
+}
+
+.profile h2{
+    color:#253439;
+    font-weight: 400;
+}
+
+#home .buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons a{
+    background-color: #253439;
+    color: white !important;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.buttons a:hover{
+    background-color: white;
+    color: #253439 !important;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+h3{
+    margin: 0;
+    font-weight: 400;
+}
+
+#home .about h3{
+    color: #253439;
+}
+
+#home .about p{
+    color: #253439;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#home .about .buttons{
+    justify-content: space-between;
+}
+
+#home .about .buttons a{
+    text-align: center;
+}
+
+#resume{
+    color: #F6F4F1;
+    background-color: #253439;
+    display: flex;
+}
+
+#resume h3{
+    color: #F6F4F1;
+    margin:0;
+}
+
+h4{
+    font-weight: 600;
+    margin: 0;
+    color: white;
+}
+
+#resume p{
+    margin: 0;
+}
+
+#portfolio{
+    text-align: center;
+    background-color: white;
+}
+
+h5{
+    color: #253439;
+    margin: 0;
+    font-weight: 400;
+}
+
+#portfolio .proj{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#portfolio .proj .project{
+    text-align: center;
+    background-color: #253439;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+h6{
+    font-weight: 600;
+    letter-spacing: 1.26px;
+    margin: 0;
+    color: white;
+}
+
+#portfolio p{
+    color: white;
+}
+
+#portfolio .buttons a{
+    border-color: white;
+    color: white;
+}
+
+#portfolio .buttons a:hover{
+    background-color: white;
+    color: #253439;
+}
+
+/* INSPIRATION : https://laplaya.studio/*/
+
+#contact{
+    background-color: #423E3A;
+}
+
+#contact .h7{
+    color: white;
+}
+
+#contact .contactInfo{
+    display: flex;
+}
+
+#contact .contactInfo .info{
+    color: white;
+}
+
+#contact div .profile{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#contact .profile h1{
+    color: white;
+}
+
+#contact .profile img{
+    border-radius: 50%;
+}
+
+#contact .profile .buttons a{
+    display: flex;
+    background-color: white;
+    color: #253439 !important;
+}
+
+#contact .profile .buttons a:hover{
+    background-color: #423E3A;
+    color: white !important;
+}
+
+.footer{
+    background:#253439;
+    text-align:center;
+}
+    
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:#7C898B;
+}
+    
+.footer .row a{
+    color:#7C898B;
+    transition:0.5s;
+}
+    
+.footer .row a:hover{
+    color:#fff;
+}
+    
+.footer .row ul{
+    width:100%;
+}
+    
+.footer .row ul li{
+    display:inline-block;
+}
+    
+.footer .row a i{
+    margin:0% 1%;
+}
+
 @media (min-width:1400px){
-        html{
-            background-color: #f6f8f8;
-        }
-        
+    
         body{
-            margin: 4vw auto 0 auto;
-            font-family: 'Montserrat', sans-serif;
-            max-width: 1400px;/* Pour Résolution 4k augmenter taille Body*/
-            box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
-        }
-        
-        a{
-            text-decoration-line: none;
+            margin: 56px auto 0 auto;
         }
         
         #home{
-            display: flex;
-            align-items: center;
-            background-color: white;
             border-top: 14px solid #7C898B;
             border-bottom: 14px solid #7C898B;
-            width: 100%;
-            max-height: 56.25vw;
-            padding: 0;
-            margin: 0;
         }
         
         .profile{
-            display: flex;
-            flex-direction: column;
             width: 280px;
             margin-left: 179.2px;
             padding-top: 42px;
-            text-align: center;
             padding-bottom: 57.4px;
         }
         
         .profile img{
-            border-top-right-radius: 47%;
-            border-top-left-radius: 47%;
             border:.1vw solid #253439;
         }
         
         .profile h1{
             font-size: 38.5px;
-            font-family: 'Alice', serif;
-            font-weight: 400;
             margin: 35px 0 14px 0;
-            color: #253439;
         }
         
         .profile h2{
             font-size: 23.52px;
-            color:#253439;
-            font-family: 'Alice', serif;
-            font-weight: 400;
             margin: 0 0 42px 0;
         }
         
         #home .buttons{
-            display: flex;
             gap: 4.2px;
-            flex-direction: row;
         }
         
         .buttons a{
-            background-color: #253439;
-            margin:2px;
-            color: white !important;
             width: 100%;
             border-radius: 4px;
-            font-weight: bold;
             font-size: 14px;
             padding: 9.8px;
             border:2.8px solid #253439;
         }
         
         .buttons a:hover{
-            background-color: white;
-            color: #253439 !important;
             box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
         }
         
@@ -88,90 +285,55 @@
         }
         
         h3{
-            font-family: 'Alice', serif;
-            margin: 0;
-            font-weight: 400;
             font-size: 44.8px;
         }
         
-        #home .about h3{
-            color: #253439;
-        }
-        
         #home .about p{
-            color: #253439;
             font-size: 16.8px;
-            text-align: justify;
-            line-height: 1.5;
-        }
-        
-        #home .about .buttons{
-            justify-content: space-between;
         }
         
         #home .about .buttons a{
             width: 196px;
-            text-align: center;
             margin: 7px 0 0 0;
         }
         
         #resume{
-            color: #F6F4F1;
-            background-color: #253439;
             border-bottom: 14px solid #7C898B;
             padding: 40.6px 43.4px 54.6px 43.4px;
-            display: flex;
         }
         
         #resume .xp{
-            width: 714px;/*necesarry or just modify based on the required width of the skills div ?*/
-        }
-        
-        #resume h3{
-            color: #F6F4F1;
-            margin:0;
+            width: 714px;
         }
         
         h4{
             font-size: 19.6px;
-            font-weight: 600;
             letter-spacing: 1.26px;
             padding: 43.4px 0 0 1.4px;
-            margin: 0;
-            color: white;
         }
         
         #resume p{
             font-size: 18.2px;
             padding: 9.8px 0 0 2.8px;
-            margin: 0;
         }
         
         #resume ul{
             margin:14px 0 0 0;
             padding: 0 0 0 37.8px;
             font-size: 18.2px;
-            line-height: 28px;
         }
         
         #portfolio{
-            text-align: center;
-            background-color: white;
             border-bottom: 14px solid #7C898B;
             padding: 0 21px;
         }
         
         h5{
-            color: #253439;
-            font-family: 'Alice', serif;
             font-size: 56px;
-            margin: 0;
-            font-weight: 400;
             padding: 28px 0 42px 0;
         }
         
         #portfolio .proj{
-            display: flex;
             flex-wrap: wrap;
             gap: 42px;
             justify-content: center;
@@ -179,13 +341,8 @@
         
         #portfolio .proj .project{
             margin: 0 0 42px 0;
-            /*border-radius: 5.6px;*/
-            transition: transform .2s;
             text-align: center;
-            background-color: #253439;
             width: 588px;
-            border-bottom-left-radius: 25%;
-            border-bottom-right-radius: 25%;
             box-shadow: rgba(0, 0, 0, 0.24) 0px .7px 14px;
         }
         
@@ -197,12 +354,8 @@
         
         h6{
             font-size: 21px;
-            font-family: 'Alice', sans-serif;
-            font-weight: 600;
             letter-spacing: 1.26px;
             padding: 4.2px 0 0 0;
-            margin: 0;
-            color: white;
         }
         
         #portfolio p{
@@ -215,28 +368,13 @@
             margin-bottom: 23.8px;
         }
         
-        #portfolio .buttons a{
-            border-color: white;
-            color: white;
-        }
-        
-        #portfolio .buttons a:hover{
-            background-color: white;
-            color: #253439;
-        }
-        
-        /* INSPIRATION : https://laplaya.studio/*/
-        
         #contact{
-            background-color: #423E3A;
             padding: 42px 98px;
             border-bottom:14px solid #7C898B;
         }
         
         #contact .h7{
-            font-family: 'Alice', sans-serif;
             font-size: 98px;
-            color: white;
             margin: 0 0 0.6em 0;
         }
         
@@ -245,89 +383,51 @@
         }
         
         #contact .contactInfo{
-            display: flex;
             align-items: center;
             justify-content: space-between;
         }
         
         #contact .contactInfo .info{
             font-size:14px;
-            color: white;
             margin-bottom: 1.5em;
         }
         
         #contact div .profile{
-            margin: 0;
-            padding: 0;
-            display: flex;
             flex-direction: column;
             align-items: center;
             width: 420px;
         }
         
-        #contact .profile h1{
-            color: white;
-        }
-        
         #contact .profile img{
-            border-radius: 50%;
             width: 252px;
             margin-bottom: 1rem;
         }
         
         #contact .profile .buttons a{
-            display: flex;
             align-items: center;
             justify-content: center;
             gap: .5rem;
-            background-color: white;
-            color: #253439 !important;
             border: 3px solid #253439;
             font-size: 16.8px;
             margin: 0 0 .1em 0;
             padding:14px 0;
             width: 420px;
-            text-decoration-line: none !important;
             border-radius: .5em;
         }
         
         #contact .profile .buttons a:hover{
-            background-color: #423E3A;
-            color: white !important;
             border: 3px solid white;
         }
         
         .footer{
-            background:#253439;
             padding:30px 0px;
-            font-family: 'Play', sans-serif;
-            text-align:center;
         }
             
         .footer .row{
-            width:100%;
-            margin:1% 0%;
-            padding:0.6% 0%;
-            color:#7C898B;
             font-size:0.8em;
         }
             
-        .footer .row a{
-            text-decoration:none;
-            color:#7C898B;
-            transition:0.5s;
-        }
-            
-        .footer .row a:hover{
-            color:#fff;
-        }
-            
-        .footer .row ul{
-            width:100%;
-        }
-            
         .footer .row ul li{
-            display:inline-block;
             margin:0px 30px;
         }
             
@@ -337,96 +437,45 @@
         }
 }
     
-/*     @media (max-width:720px){
-    .footer{
-    text-align:center;
-    padding:5%;
-    }
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-    }
-    .footer .row a i{
-    margin:0% 3%;
-    }
-    } */
-@media (max-width:1400px){
+@media (min-width:769px) and (max-width:1400px){
     body{
         margin: 0;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    a{
-        text-decoration-line: none;
     }
     
     #home{
-        display: flex;
-        align-items: center;
-        background-color: white;
         border-top: 1vw solid #7C898B;
         border-bottom: 1vw solid #7C898B;
-        width: 100%;
-        max-height: 56.25vw;
-        padding: 0;
-        margin: 0;
     }
     
     .profile{
-        display: flex;
-        flex-direction: column;
         width: 20vw;
         margin-left: 12.8vw;
         padding-top: 3vw;
-        text-align: center;
         padding-bottom: 4.1vw;
     }
     
     .profile img{
-        border-top-right-radius: 47%;
-        border-top-left-radius: 47%;
         border:.1vw solid #253439;
     }
     
     .profile h1{
         font-size: 2.75vw;
-        font-family: 'Alice', serif;
-        font-weight: 400;
         margin: 2.5vw 0 1vw 0;
-        color: #253439;
     }
     
     .profile h2{
         font-size: 1.68vw;
-        color:#253439;
-        font-family: 'Alice', serif;
-        font-weight: 400;
         margin: 0 0 3vw 0;
     }
     
     #home .buttons{
-        display: flex;
         gap: 0.3vw;
-        flex-direction: row;
     }
     
     .buttons a{
-        background-color: #253439;
-        margin:2px;
-        color: white !important;
-        width: 100%;
-        border-radius: 4px;
-        font-weight: bold;
         font-size: 1vw;
         padding: .7vw;
         border:0.2vw solid #253439;
-    }
-    
-    .buttons a:hover{
-        background-color: white;
-        color: #253439 !important;
-        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
     }
     
     #home .about{
@@ -435,63 +484,38 @@
     }
     
     h3{
-        font-family: 'Alice', serif;
-        margin: 0;
-        font-weight: 400;
         font-size: 3.2vw;
     }
     
-    #home .about h3{
-        color: #253439;
-    }
-    
     #home .about p{
-        color: #253439;
         font-size: 1.2vw;
         text-align: justify;
         line-height: 1.5;
     }
     
-    #home .about .buttons{
-        justify-content: space-between;
-    }
-    
     #home .about .buttons a{
         width: 14vw;
-        text-align: center;
         margin: 0.5vw 0 0 0;
     }
     
     #resume{
-        color: #F6F4F1;
-        background-color: #253439;
         border-bottom: 1vw solid #7C898B;
         padding: 2.9vw 3.1vw 3.9vw 3.1vw;
-        display: flex;
     }
     
     #resume .xp{
-        width: 51vw;/*necesarry or just modify based on the required width of the skills div ?*/
-    }
-    
-    #resume h3{
-        color: #F6F4F1;
-        margin:0;
+        width: 51vw;
     }
     
     h4{
         font-size: 1.4vw;
-        font-weight: 600;
         letter-spacing: .09vw;
         padding: 3.1vw 0 0 0.1vw;
-        margin: 0;
-        color: white;
     }
     
     #resume p{
         font-size: 1.3vw;
         padding: 0.7vw 0 0 0.2vw;
-        margin: 0;
     }
     
     #resume ul{
@@ -502,34 +526,21 @@
     }
     
     #portfolio{
-        text-align: center;
-        background-color: white;
         border-bottom: 1vw solid #7C898B;
-        padding: 0 1.5vw;
+        padding: 2vw 1.5vw;
     }
     
     h5{
-        color: #253439;
-        font-family: 'Alice', serif;
         font-size: 4vw;
-        margin: 0;
-        font-weight: 400;
         padding: 0 0 3vw 0;
     }
     
     #portfolio .proj{
-        display: flex;
-        flex-wrap: wrap;
         gap: 3vw;
-        justify-content: center;
     }
     
     #portfolio .proj .project{
         margin: 0 0 3vw 0;
-        /*border-radius: 0.4vw;*/
-        transition: transform .2s;
-        text-align: center;
-        background-color: #253439;
         width: 42vw;
         border-bottom-left-radius: 10vw;
         border-bottom-right-radius: 10vw;
@@ -537,52 +548,18 @@
     }
     
     #portfolio .proj div img{
-        /* border: 0.1vw solid #7C898B; */
         border-bottom: 0.1vw solid #7C898B;
         width: 42vw;
         height: 28vw;
-        /* padding: 1vw; */
     }
-    
-    /* #portfolio .proj div:nth-child(odd):hover{
-        transform: scale(1.75);
-        transform-origin: bottom left;
-    }
-    
-    #portfolio .proj div:nth-child(even):hover{
-        transform: scale(1.75);
-        transform-origin: right;
-    } */
     
     h6{
         font-size: 1.5vw;
-        font-family: 'Alice', sans-serif;
-        font-weight: 600;
         letter-spacing: .09vw;
         padding: .3vw 0 0 0;
-        margin: 0;
-        color: white;
     }
-    
-    /* .focus{
-        z-index:0;
-        display : block;
-        visibility : visible;
-        left:25vw;
-        top:2vw;
-        position: fixed;
-        background-color: #253439;
-        text-align: center;
-        width: 50vw;
-    }
-    
-    .focus img{
-        background-color: #253439;
-        width: 50vw;
-    } */
     
     #portfolio p{
-        color: white;
         font-size: 1vw;
         margin:0.5vw 1.5vw 1.8vw 1.5vw;
     }
@@ -591,28 +568,13 @@
         margin-bottom: 1.7vw;
     }
     
-    #portfolio .buttons a{
-        border-color: white;
-        color: white;
-    }
-    
-    #portfolio .buttons a:hover{
-        background-color: white;
-        color: #253439;
-    }
-    
-    /* INSPIRATION : https://laplaya.studio/*/
-    
     #contact{
-        background-color: #423E3A;
         padding: 4vw 7vw;
         border-bottom: 1vw solid #7C898B;
     }
     
     #contact .h7{
-        font-family: 'Alice', sans-serif;
         font-size: 7vw;
-        color: white;
         margin: 0 0 0.6em 0;
     }
     
@@ -621,99 +583,60 @@
     }
     
     #contact .contactInfo{
-        display: flex;
         align-items: center;
         justify-content: space-between;
     }
     
     #contact .contactInfo .info{
         font-size: 1vw;
-        color: white;
         margin-bottom: 1.5em;
     }
     
     #contact div .profile{
-        margin: 0;
-        padding: 0;
-        display: flex;
         flex-direction: column;
         align-items: center;
         width: 30vw;
     }
     
-    #contact .profile h1{
-        color: white;
-    }
-    
     #contact .profile img{
-        border-radius: 50%;
         width: 18vw;
         margin-bottom: 1rem;
     }
     
-    #contact .profile .buttons{
-        transition: transform .2s;
-    }
-    
     #contact .profile .buttons a{
-        display: flex;
         align-items: center;
         justify-content: center;
         gap: .5rem;
-        background-color: white;
-        color: #253439 !important;
         border: .31vw solid #253439;
         font-size: 1.2vw;
         margin: 0 0 .1em 0;
         padding: 1vw 0;
         width: 30vw;
-        text-decoration-line: none !important;
         border-radius: .5em;
     }
     
     #contact .profile .buttons a:hover{
-        background-color: #423E3A;
-        color: white !important;
         border: .31vw solid white;
     }
     
     .footer{
-        background:#253439;
         padding:2vw 0px;
-        font-family: 'Play', sans-serif;
-        text-align:center;
     }
         
     .footer .row{
-        width:100%;
-        margin:1% 0%;
-        padding:0.6% 0%;
-        color:#7C898B;
         font-size:1vw;
-    }
-        
-    .footer .row a{
-        text-decoration:none;
-        color:#7C898B;
-        transition:0.5s;
     }
         
     .footer .row a:hover{
         color:#fff;
     }
         
-    .footer .row ul{
-        width:100%;
-    }
-        
     .footer .row ul li{
-        display:inline-block;
         margin:0px 2vw;
     }
         
     .footer .row a i{
         font-size:2vw;
-        margin:0% 1%;
     }
 }    
     
