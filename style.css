@@ -1,3 +1,10 @@
+/* @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops }
+@media (min-width:1281px) { /* hi-res laptops and desktops } */
+
 html{
     background-color: #f6f8f8;
 }
@@ -35,6 +42,7 @@ a{
 .profile img{
     border-top-right-radius: 47%;
     border-top-left-radius: 47%;
+    border:1px solid #253439;
 }
 
 .profile h1{
@@ -437,7 +445,7 @@ h6{
         }
 }
     
-@media (min-width:769px) and (max-width:1400px){
+@media (min-width:1025px) and (max-width:1400px){
     body{
         margin: 0;
     }
@@ -452,10 +460,6 @@ h6{
         margin-left: 12.8vw;
         padding-top: 3vw;
         padding-bottom: 4.1vw;
-    }
-    
-    .profile img{
-        border:.1vw solid #253439;
     }
     
     .profile h1{
@@ -638,12 +642,212 @@ h6{
     .footer .row a i{
         font-size:2vw;
     }
+}   
+
+@media (min-width:641px) and (max-width:1025px){
+    body{
+        margin: 0;
+    }
+    
+    #home{
+        border-top: 1vw solid #7C898B;
+        border-bottom: 1vw solid #7C898B;
+    }
+    
+    .profile{
+        width: 22vw;
+        margin-left: 10.8vw;
+        padding-top: 2vw;
+        padding-bottom: 2.5vw;
+    }
+    
+    .profile h1{
+        font-size: 3vw;
+        margin: 2.5vw 0 1.3vw 0;
+    }
+    
+    .profile h2{
+        font-size: 1.8vw;
+        margin: 0 0 3vw 0;
+    }
+    
+    #home .buttons{
+        gap: 0.5vw;
+    }
+    
+    .buttons a{
+        font-size: 1.2vw;
+        padding: .8vw;
+    }
+    
+    #home .about{
+        margin: 0 0 0 21vw;
+        width: 36vw;
+    }
+    
+    h3{
+        font-size: 3.5vw;
+    }
+    
+    #home .about p{
+        font-size: 1.5vw;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    
+    #home .about .buttons a{
+        width: 14.5vw;
+        margin: 0.5vw 0 0 0;
+    }
+    
+    #resume{
+        border-bottom: 1vw solid #7C898B;
+        padding: 2.9vw 3.1vw 3.9vw 3.1vw;
+    }
+    
+    #resume .xp{
+        width: 51vw;
+    }
+    
+    h4{
+        font-size: 1.8vw;
+        letter-spacing: .09vw;
+        padding: 3.1vw 0 0 0.1vw;
+    }
+    
+    #resume p{
+        font-size: 1.6vw;
+        padding: 0.7vw 0 0 0.2vw;
+    }
+    
+    #resume ul{
+        margin:1vw 0 0 0;
+        padding: 0 0 0 2.7vw;
+        font-size: 1.6vw;
+        line-height: 2vw;
+    }
+    
+    #portfolio{
+        border-bottom: 1vw solid #7C898B;
+        padding: 2vw 1.5vw;
+    }
+    
+    h5{
+        font-size: 4.5vw;
+        padding: 0 0 3vw 0;
+    }
+    
+    #portfolio .proj{
+        gap: 3vw;
+    }
+    
+    #portfolio .proj .project{
+        margin: 0 0 3vw 0;
+        width: 42vw;
+        border-bottom-left-radius: 10vw;
+        border-bottom-right-radius: 10vw;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px .5vw 1vw;
+    }
+    
+    #portfolio .proj div img{
+        border-bottom: 0.1vw solid #7C898B;
+        width: 42vw;
+        height: 28vw;
+    }
+    
+    h6{
+        font-size: 1.8vw;
+        letter-spacing: .09vw;
+        padding: .3vw 0 0 0;
+    }
+    
+    #portfolio p{
+        font-size: 1.45vw;
+        margin:0.5vw 1.5vw 1.8vw 1.5vw;
+    }
+    
+    #portfolio .buttons{
+        margin-bottom: 1.7vw;
+    }
+
+    #portfolio .buttons a{
+        border:0.2vw solid white;
+    }
+
+    .buttons a:hover{
+        background-color: white;
+        color: #253439 !important;
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    #contact{
+        padding: 4vw 7vw;
+        border-bottom: 1vw solid #7C898B;
+    }
+    
+    #contact .h7{
+        font-size: 7vw;
+        margin: 0 0 0.6em 0;
+    }
+    
+    #contact h4{
+        margin-bottom: 1.3em;
+    }
+    
+    #contact .contactInfo{
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #contact .contactInfo .info{
+        font-size: 1.5vw;
+        margin-bottom: 1.5em;
+    }
+    
+    #contact div .profile{
+        flex-direction: column;
+        align-items: center;
+        width: 30vw;
+    }
+    
+    #contact .profile img{
+        width: 18vw;
+        margin-bottom: 1rem;
+    }
+    
+    #contact .profile .buttons a{
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        border: .31vw solid #253439;
+        font-size: 1.5vw;
+        margin: 0 0 .1em 0;
+        padding: 1vw 0;
+        width: 36vw;
+        border-radius: .5em;
+    }
+    
+    #contact .profile .buttons a:hover{
+        border: .31vw solid white;
+    }
+    
+    .footer{
+        padding:2vw 0px;
+    }
+        
+    .footer .row{
+        font-size:1.5vw;
+    }
+        
+    .footer .row a:hover{
+        color:#fff;
+    }
+        
+    .footer .row ul li{
+        margin:0px 2vw;
+    }
+        
+    .footer .row a i{
+        font-size:3vw;
+    }
 }    
-    
-    
-    
-    
-
-
-
-
