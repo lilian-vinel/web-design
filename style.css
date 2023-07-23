@@ -1,18 +1,13 @@
-/* @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops }
-@media (min-width:1281px) { /* hi-res laptops and desktops } */
-
 html{
     background-color: #f6f8f8;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
-    max-width: 1400px;/* Pour Résolution 4k augmenter taille Body*/
+    max-width: 1400px;
+    min-width: 320px;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
 }
 
 h1,h2,h3,h4,h5,h6,.h7{
@@ -24,63 +19,83 @@ a{
 }
 
 #home{
+    border-top: 10px solid #7C898B;
+    border-bottom: 10px solid #7C898B;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: white;
     width: 100%;
-    max-height: 56.25vw;
-    padding: 0;
+    padding: 10% 0;
     margin: 0;
 }
 
 .profile{
-    display: flex;
-    flex-direction: column;
     text-align: center;
+    width: 280px;
 }
 
 .profile img{
     border-top-right-radius: 47%;
     border-top-left-radius: 47%;
     border:1px solid #253439;
+    width: 280px;
 }
 
 .profile h1{
     font-weight: 400;
     color: #253439;
+    font-size: 35px;
+    margin: 8% 0 5% 0;
 }
 
 .profile h2{
     color:#253439;
     font-weight: 400;
+    font-size: 23px;
+    margin-bottom: 6%;
 }
 
 #home .buttons{
     display: flex;
     flex-direction: row;
+    gap: 4%;
 }
 
 .buttons a{
+    text-align: center;
     background-color: #253439;
-    color: white !important;
+    color: white;
     width: 100%;
     border-radius: 4px;
     font-weight: bold;
+    font-size: 13px;
+    border: 2px solid #253439;
+    padding: 8px;
 }
 
 .buttons a:hover{
     background-color: white;
-    color: #253439 !important;
+    color: #253439;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 h3{
-    margin: 0;
+    margin: 12% 0 0 0;
+    font-size: 25px;
     font-weight: 400;
+}
+
+#home .about{
+    width: 87%;
 }
 
 #home .about h3{
     color: #253439;
+    text-align: center;
+    padding-top: 9%;
+    border-top: 1px solid #253439;
 }
 
 #home .about p{
@@ -101,16 +116,29 @@ h3{
     color: #F6F4F1;
     background-color: #253439;
     display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 10% 0;
+    border-bottom: 10px solid #7C898B;
 }
 
-#resume h3{
-    color: #F6F4F1;
-    margin:0;
+.xp, .skills{
+    width: 87%;
+}
+
+#resume .xp h3{
+    margin-top: 0;
+}
+
+#resume .skills h3{
+    padding-top: 9%;
+    border-top: 1px solid white;
 }
 
 h4{
     font-weight: 600;
-    margin: 0;
+    margin: 6% 0 2% 0;
     color: white;
 }
 
@@ -121,25 +149,42 @@ h4{
 #portfolio{
     text-align: center;
     background-color: white;
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 10px solid #7C898B;
 }
 
 h5{
     color: #253439;
     margin: 0;
     font-weight: 400;
+    margin-bottom: -5%;
+    font-size: 33px;
 }
 
 #portfolio .proj{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    width: 87%;
+    gap:5%;
 }
 
 #portfolio .proj .project{
+    margin-top: 15%;
     text-align: center;
     background-color: #253439;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+#portfolio .proj .project img{
+    width:100%;
 }
 
 h6{
@@ -147,10 +192,21 @@ h6{
     letter-spacing: 1.26px;
     margin: 0;
     color: white;
+    font-size: 16px;
+    padding: 2% 0 3% 0;
 }
 
 #portfolio p{
     color: white;
+    font-size: 14px;
+    margin: 0;
+    width: 95%;
+    padding: 0 2.5%;
+}
+
+#portfolio .buttons{
+    margin: 6% 0 2% 0;
+    height: 36px;
 }
 
 #portfolio .buttons a{
@@ -163,28 +219,39 @@ h6{
     color: #253439;
 }
 
-/* INSPIRATION : https://laplaya.studio/*/
-
 #contact{
     background-color: #423E3A;
+    border-bottom: 10px solid #7C898B;
+    text-align: center;
+    padding: 10% 0;
 }
 
 #contact .h7{
     color: white;
+    font-size: 55px;
+    margin: 0 0 15% 0;
 }
 
 #contact .contactInfo{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #contact .contactInfo .info{
     color: white;
+    text-align: left;
+    font-size: 14px;
 }
 
-#contact div .profile{
+#contact .profile{
     margin: 0;
-    padding: 0;
+    padding: 5% 0 0 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #contact .profile h1{
@@ -195,32 +262,46 @@ h6{
     border-radius: 50%;
 }
 
-#contact .profile .buttons a{
+#contact .profile .buttons{
     display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 6.5% 11% 0 4%;
+}
+
+#contact .profile .buttons a{
     background-color: white;
     color: #253439 !important;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #253439;
+    margin-top: 1.5%;
 }
 
 #contact .profile .buttons a:hover{
     background-color: #423E3A;
     color: white !important;
+    border: 3px solid white;
 }
 
 .footer{
     background:#253439;
     text-align:center;
+    padding: 5% 0;
 }
     
 .footer .row{
     width:100%;
-    margin:1% 0%;
-    padding:0.6% 0%;
+    padding:0 0 4% 0%;
     color:#7C898B;
+    font-size: 12px;
 }
     
 .footer .row a{
     color:#7C898B;
     transition:0.5s;
+    font-size: 20px;
+    padding: 0 2%;
 }
     
 .footer .row a:hover{
@@ -239,615 +320,226 @@ h6{
     margin:0% 1%;
 }
 
-@media (min-width:1400px){
-    
-        body{
-            margin: 56px auto 0 auto;
-        }
-        
-        #home{
-            border-top: 14px solid #7C898B;
-            border-bottom: 14px solid #7C898B;
-        }
-        
-        .profile{
-            width: 280px;
-            margin-left: 179.2px;
-            padding-top: 42px;
-            padding-bottom: 57.4px;
-        }
-        
-        .profile img{
-            border:.1vw solid #253439;
-        }
-        
-        .profile h1{
-            font-size: 38.5px;
-            margin: 35px 0 14px 0;
-        }
-        
-        .profile h2{
-            font-size: 23.52px;
-            margin: 0 0 42px 0;
-        }
-        
-        #home .buttons{
-            gap: 4.2px;
-        }
-        
-        .buttons a{
-            width: 100%;
-            border-radius: 4px;
-            font-size: 14px;
-            padding: 9.8px;
-            border:2.8px solid #253439;
-        }
-        
-        .buttons a:hover{
-            box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
-        }
-        
-        #home .about{
-            margin: 0 0 0 301px;
-            width: 504px;
-        }
-        
-        h3{
-            font-size: 44.8px;
-        }
-        
-        #home .about p{
-            font-size: 16.8px;
-        }
-        
-        #home .about .buttons a{
-            width: 196px;
-            margin: 7px 0 0 0;
-        }
-        
-        #resume{
-            border-bottom: 14px solid #7C898B;
-            padding: 40.6px 43.4px 54.6px 43.4px;
-        }
-        
-        #resume .xp{
-            width: 714px;
-        }
-        
-        h4{
-            font-size: 19.6px;
-            letter-spacing: 1.26px;
-            padding: 43.4px 0 0 1.4px;
-        }
-        
-        #resume p{
-            font-size: 18.2px;
-            padding: 9.8px 0 0 2.8px;
-        }
-        
-        #resume ul{
-            margin:14px 0 0 0;
-            padding: 0 0 0 37.8px;
-            font-size: 18.2px;
-        }
-        
-        #portfolio{
-            border-bottom: 14px solid #7C898B;
-            padding: 0 21px;
-        }
-        
-        h5{
-            font-size: 56px;
-            padding: 28px 0 42px 0;
-        }
-        
-        #portfolio .proj{
-            flex-wrap: wrap;
-            gap: 42px;
-            justify-content: center;
-        }
-        
-        #portfolio .proj .project{
-            margin: 0 0 42px 0;
-            text-align: center;
-            width: 588px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px .7px 14px;
-        }
-        
-        #portfolio .proj div img{
-            border-bottom: 1.4px solid #7C898B;
-            width: 588px;
-            height: 392px;
-        }
-        
-        h6{
-            font-size: 21px;
-            letter-spacing: 1.26px;
-            padding: 4.2px 0 0 0;
-        }
-        
-        #portfolio p{
-            color: white;
-            font-size:14px;
-            margin: 7px 21px 25.2px 21px;
-        }
-        
-        #portfolio .buttons{
-            margin-bottom: 23.8px;
-        }
-        
-        #contact{
-            padding: 42px 98px;
-            border-bottom:14px solid #7C898B;
-        }
-        
-        #contact .h7{
-            font-size: 98px;
-            margin: 0 0 0.6em 0;
-        }
-        
-        #contact h4{
-            margin-bottom: 1.3em;
-        }
-        
-        #contact .contactInfo{
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        #contact .contactInfo .info{
-            font-size:14px;
-            margin-bottom: 1.5em;
-        }
-        
-        #contact div .profile{
-            flex-direction: column;
-            align-items: center;
-            width: 420px;
-        }
-        
-        #contact .profile img{
-            width: 252px;
-            margin-bottom: 1rem;
-        }
-        
-        #contact .profile .buttons a{
-            align-items: center;
-            justify-content: center;
-            gap: .5rem;
-            border: 3px solid #253439;
-            font-size: 16.8px;
-            margin: 0 0 .1em 0;
-            padding:14px 0;
-            width: 420px;
-            border-radius: .5em;
-        }
-        
-        #contact .profile .buttons a:hover{
-            border: 3px solid white;
-        }
-        
-        .footer{
-            padding:30px 0px;
-        }
-            
-        .footer .row{
-            font-size:0.8em;
-        }
-            
-        .footer .row ul li{
-            margin:0px 30px;
-        }
-            
-        .footer .row a i{
-            font-size:2em;
-            margin:0% 1%;
-        }
+@media (min-width:641px)  {
+    #home{
+        padding: 5% 0;
+    }
+
+    #home .about{
+        width: 94%;
+    }
+
+    #home .about h3{
+        margin-top: 7%;
+        padding-top: 5%;
+    }
+
+    #home .about .buttons{
+        justify-content: space-around;
+    }
+
+    #home .about .buttons a{
+        width: 35%;
+    }
+
+    #resume{
+        padding: 5% 3%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    .skills, .xp{
+        width: 47%;
+    }
+
+    #resume .skills h3{
+        border-top: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #portfolio{
+        padding: 5% 3%;
+    }
+
+    #portfolio h5{
+        font-size: 35px;
+        margin: 0;
+    }
+
+    #portfolio .proj .project{
+        margin-top: 5%;
+    }
+
+    h6{
+        padding: 1% 0 1.5% 0;
+    }
+
+    #portfolio .buttons{
+        margin: 4% 0 1% 0;
+    }
+
+    #contact{
+        padding: 5% 2% 5% 3%;
+        text-align: left;
+    }
+
+    #contact .h7{
+        font-size: 60px;
+    }
+
+    #contact .contactInfo{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5%;
+    }
+
+    #contact .profile{
+        padding-top: 0;
+        margin-right:0;
+    }
+
+    #contact img{
+        width: 75%;
+    }
+
+    #contact .buttons{
+        width: 100%;
+        padding: 6.5% 0 0 0;
+    }
+
+    .footer{
+        padding: 3% 0 2% 0;
+    }
+
+    footer .row{
+        padding: 0 0 1.5% 0 !important;
+        font-size: 14px !important;
+    }
 }
-    
-@media (min-width:1025px) and (max-width:1400px){
-    body{
-        margin: 0;
-    }
-    
+
+@media (min-width:851px){
     #home{
-        border-top: 1vw solid #7C898B;
-        border-bottom: 1vw solid #7C898B;
+        flex-direction: row;
+        justify-content: space-between;
     }
-    
-    .profile{
-        width: 20vw;
-        margin-left: 12.8vw;
-        padding-top: 3vw;
-        padding-bottom: 4.1vw;
+
+    #home .profile{
+        padding-left: 8%;
     }
-    
-    .profile h1{
-        font-size: 2.75vw;
-        margin: 2.5vw 0 1vw 0;
-    }
-    
-    .profile h2{
-        font-size: 1.68vw;
-        margin: 0 0 3vw 0;
-    }
-    
-    #home .buttons{
-        gap: 0.3vw;
-    }
-    
-    .buttons a{
-        font-size: 1vw;
-        padding: .7vw;
-        border:0.2vw solid #253439;
-    }
-    
+
     #home .about{
-        margin: 0 0 0 21vw;
-        width: 36vw;
+        width: 41%;
+        padding-right: 6%;
     }
-    
-    h3{
-        font-size: 3.2vw;
+
+    #home .about h3{
+        text-align: left;
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
     }
-    
-    #home .about p{
-        font-size: 1.2vw;
-        text-align: justify;
-        line-height: 1.5;
+
+    #home .about .buttons{
+        justify-content: space-between;
     }
-    
-    #home .about .buttons a{
-        width: 14vw;
-        margin: 0.5vw 0 0 0;
+
+    #contact .profile .buttons a{
+        font-size: 14px;
+        padding: 15px;
     }
-    
-    #resume{
-        border-bottom: 1vw solid #7C898B;
-        padding: 2.9vw 3.1vw 3.9vw 3.1vw;
+
+    #contact .contactInfo{
+        gap:10%;
     }
-    
-    #resume .xp{
-        width: 51vw;
+
+    #contact .h7{
+        font-size: 90px;
     }
-    
-    h4{
-        font-size: 1.4vw;
-        letter-spacing: .09vw;
-        padding: 3.1vw 0 0 0.1vw;
-    }
-    
-    #resume p{
-        font-size: 1.3vw;
-        padding: 0.7vw 0 0 0.2vw;
-    }
-    
-    #resume ul{
-        margin:1vw 0 0 0;
-        padding: 0 0 0 2.7vw;
-        font-size: 1.3vw;
-        line-height: 2vw;
-    }
-    
+}
+
+@media (min-width:961px)  {
     #portfolio{
-        border-bottom: 1vw solid #7C898B;
-        padding: 2vw 1.5vw;
+        padding: 3% 0 5% 0;
     }
-    
-    h5{
-        font-size: 4vw;
-        padding: 0 0 3vw 0;
-    }
-    
+
     #portfolio .proj{
-        gap: 3vw;
+        width: 94%;
     }
-    
+
     #portfolio .proj .project{
-        margin: 0 0 3vw 0;
-        width: 42vw;
-        border-bottom-left-radius: 10vw;
-        border-bottom-right-radius: 10vw;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px .5vw 1vw;
+        width: 47%;
     }
-    
-    #portfolio .proj div img{
-        border-bottom: 0.1vw solid #7C898B;
-        width: 42vw;
-        height: 28vw;
+
+    #contact{
+        padding: 5% 4% 5% 5%;
     }
-    
-    h6{
-        font-size: 1.5vw;
-        letter-spacing: .09vw;
-        padding: .3vw 0 0 0;
+
+    #contact .h7{
+        font-size: 100px;
     }
-    
-    #portfolio p{
-        font-size: 1vw;
-        margin:0.5vw 1.5vw 1.8vw 1.5vw;
+}
+@media (min-width:1025px) {
+
+    /* #resume{
+        padding: 5% 0%;
     }
-    
-    #portfolio .buttons{
-        margin-bottom: 1.7vw;
+
+    .skills{
+        margin-left: 3%;
+        width: 20%;
+    }
+
+    .xp{
+        margin-left: 3%;
+        width: 20%;
+    } */
+
+    #resume h4{
+        font-size: 18px;
+    }
+
+    #resume p, li{
+        font-size: 18px;
     }
     
     #contact{
-        padding: 4vw 7vw;
-        border-bottom: 1vw solid #7C898B;
+        padding: 5% 7% 5% 5%;
     }
-    
-    #contact .h7{
-        font-size: 7vw;
-        margin: 0 0 0.6em 0;
+
+    #contact img{
+        width: 250px;
     }
-    
-    #contact h4{
-        margin-bottom: 1.3em;
+
+    #contact .profile .buttons{
+        width: 350px;
     }
-    
-    #contact .contactInfo{
-        align-items: center;
-        justify-content: space-between;
+
+    #contact .profile .buttons a{
+        font-size: 15px;
     }
-    
-    #contact .contactInfo .info{
-        font-size: 1vw;
-        margin-bottom: 1.5em;
-    }
-    
-    #contact div .profile{
+
+    .footer{
+        display: flex;
         flex-direction: column;
         align-items: center;
-        width: 30vw;
-    }
-    
-    #contact .profile img{
-        width: 18vw;
-        margin-bottom: 1rem;
-    }
-    
-    #contact .profile .buttons a{
-        align-items: center;
         justify-content: center;
-        gap: .5rem;
-        border: .31vw solid #253439;
-        font-size: 1.2vw;
-        margin: 0 0 .1em 0;
-        padding: 1vw 0;
-        width: 30vw;
-        border-radius: .5em;
     }
-    
-    #contact .profile .buttons a:hover{
-        border: .31vw solid white;
-    }
-    
-    .footer{
-        padding:2vw 0px;
-    }
-        
+
     .footer .row{
-        font-size:1vw;
-    }
-        
-    .footer .row a:hover{
-        color:#fff;
-    }
-        
-    .footer .row ul li{
-        margin:0px 2vw;
-    }
-        
-    .footer .row a i{
-        font-size:2vw;
-    }
-}   
-
-@media (min-width:641px) and (max-width:1025px){
-    body{
-        margin: 0;
-    }
-    
-    #home{
-        border-top: 1vw solid #7C898B;
-        border-bottom: 1vw solid #7C898B;
-    }
-    
-    .profile{
-        width: 22vw;
-        margin-left: 10.8vw;
-        padding-top: 2vw;
-        padding-bottom: 2.5vw;
-    }
-    
-    .profile h1{
-        font-size: 3vw;
-        margin: 2.5vw 0 1.3vw 0;
-    }
-    
-    .profile h2{
-        font-size: 1.8vw;
-        margin: 0 0 3vw 0;
-    }
-    
-    #home .buttons{
-        gap: 0.5vw;
-    }
-    
-    .buttons a{
-        font-size: 1.2vw;
-        padding: .8vw;
-    }
-    
-    #home .about{
-        margin: 0 0 0 21vw;
-        width: 36vw;
-    }
-    
-    h3{
-        font-size: 3.5vw;
-    }
-    
-    #home .about p{
-        font-size: 1.5vw;
-        text-align: justify;
-        line-height: 1.5;
-    }
-    
-    #home .about .buttons a{
-        width: 14.5vw;
-        margin: 0.5vw 0 0 0;
-    }
-    
-    #resume{
-        border-bottom: 1vw solid #7C898B;
-        padding: 2.9vw 3.1vw 3.9vw 3.1vw;
-    }
-    
-    #resume .xp{
-        width: 51vw;
-    }
-    
-    h4{
-        font-size: 1.8vw;
-        letter-spacing: .09vw;
-        padding: 3.1vw 0 0 0.1vw;
-    }
-    
-    #resume p{
-        font-size: 1.6vw;
-        padding: 0.7vw 0 0 0.2vw;
-    }
-    
-    #resume ul{
-        margin:1vw 0 0 0;
-        padding: 0 0 0 2.7vw;
-        font-size: 1.6vw;
-        line-height: 2vw;
-    }
-    
-    #portfolio{
-        border-bottom: 1vw solid #7C898B;
-        padding: 2vw 1.5vw;
-    }
-    
-    h5{
-        font-size: 4.5vw;
-        padding: 0 0 3vw 0;
-    }
-    
-    #portfolio .proj{
-        gap: 3vw;
-    }
-    
-    #portfolio .proj .project{
-        margin: 0 0 3vw 0;
-        width: 42vw;
-        border-bottom-left-radius: 10vw;
-        border-bottom-right-radius: 10vw;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px .5vw 1vw;
-    }
-    
-    #portfolio .proj div img{
-        border-bottom: 0.1vw solid #7C898B;
-        width: 42vw;
-        height: 28vw;
-    }
-    
-    h6{
-        font-size: 1.8vw;
-        letter-spacing: .09vw;
-        padding: .3vw 0 0 0;
-    }
-    
-    #portfolio p{
-        font-size: 1.45vw;
-        margin:0.5vw 1.5vw 1.8vw 1.5vw;
-    }
-    
-    #portfolio .buttons{
-        margin-bottom: 1.7vw;
+        font-size: 15px !important;
+        padding: 1% !important;
+        width: 90%;
     }
 
-    #portfolio .buttons a{
-        border:0.2vw solid white;
+    .footer .row a{
+        font-size: 30px !important;
     }
+}
+/*@media (min-width:1281px) { /* hi-res laptops and desktops } */
 
-    .buttons a:hover{
-        background-color: white;
-        color: #253439 !important;
-        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
-    }
-    
-    #contact{
-        padding: 4vw 7vw;
-        border-bottom: 1vw solid #7C898B;
-    }
-    
-    #contact .h7{
-        font-size: 7vw;
-        margin: 0 0 0.6em 0;
-    }
-    
-    #contact h4{
-        margin-bottom: 1.3em;
-    }
-    
-    #contact .contactInfo{
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    #contact .contactInfo .info{
-        font-size: 1.5vw;
-        margin-bottom: 1.5em;
-    }
-    
-    #contact div .profile{
-        flex-direction: column;
-        align-items: center;
-        width: 30vw;
-    }
-    
-    #contact .profile img{
-        width: 18vw;
-        margin-bottom: 1rem;
-    }
-    
-    #contact .profile .buttons a{
-        align-items: center;
-        justify-content: center;
-        gap: .5rem;
-        border: .31vw solid #253439;
-        font-size: 1.5vw;
-        margin: 0 0 .1em 0;
-        padding: 1vw 0;
-        width: 36vw;
-        border-radius: .5em;
-    }
-    
-    #contact .profile .buttons a:hover{
-        border: .31vw solid white;
-    }
-    
-    .footer{
-        padding:2vw 0px;
-    }
-        
-    .footer .row{
-        font-size:1.5vw;
-    }
-        
-    .footer .row a:hover{
-        color:#fff;
-    }
-        
-    .footer .row ul li{
-        margin:0px 2vw;
-    }
-        
-    .footer .row a i{
-        font-size:3vw;
-    }
-}    
