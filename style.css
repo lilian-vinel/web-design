@@ -541,5 +541,64 @@ h6{
         font-size: 30px !important;
     }
 }
-/*@media (min-width:1281px) { /* hi-res laptops and desktops } */
+@media (min-width:1281px) {
+    #home .profile{
+        padding-left: 10%;
+    }
 
+    #home .about{
+        padding-right: 11%;
+        width: 36%;
+    }
+
+    #home .profile .buttons a, #home .about .buttons a{
+        font-size: 15px;
+    }
+
+    #resume{
+        padding: 3% 3%;
+    }
+
+    #resume h3{
+        font-size: 40px;
+    }
+
+    #resume h4{
+        font-size: 22px;
+    }
+
+    #resume p,li{
+        font-size: 21px;
+    }
+
+    #portfolio h5{
+        font-size: 45px;
+    }
+
+    #portfolio .proj .project{
+        margin-top: 3.5%;
+    }
+
+    #contact{
+        padding: 3% 9% 3% 5%;
+    }
+
+    #contact .h7{
+        font-size: 120px;
+        margin: 0 0 10% 0;
+    }
+
+    #contact h4{
+        font-size: 20px;
+    }
+
+    #contact .contactInfo .info{
+        font-size: 16px;
+    }
+}
+
+@media (min-width:1401px){
+    body{
+        margin-top: 3%;
+    }
+}
