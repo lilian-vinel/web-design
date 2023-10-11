@@ -12,6 +12,45 @@
     <title>Lilian Vinel - Web Designer</title>
 </head>
 <body>
+    <div class="test"></div>
+    <section id="menu">
+        <nav class="pcNav">
+          <a href="#about">About</a>
+          <a href="#resume">Background & Skills</a>
+          <a href="#top" id="logo"><img src="assets/logo.png"/></a>
+          <a href="#portfolio">Portfolio</a>
+          <!-- <a href="#">Download CV</a> -->
+          <a href="#contact">Contact</a>
+          <div class="socials">
+            <a href="mailto:lilian.vinel@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/lilian-vinel/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <!-- <a href="https://api.whatsapp.com/send?phone=4915904865384" target="_blank"><i class="fa fa-whatsapp"></i></a> -->
+            <a href="https://github.com/lilouvinel" target="_blank"><i class="fa fa-github"></i></a>
+          </div>
+        </nav>
+      </nav>
+      <div class="phoneNav">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#resume">Background & Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="phoneSocials">
+                            <a href="mailto:lilian.vinel@gmail.com"><i class="fa fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/lilian-vinel/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/lilouvinel" target="_blank"><i class="fa fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+      </section>
     <section id="home">
         <div class="profile">
             <img src="./assets/Photo CV2.png">
@@ -23,12 +62,12 @@
                 </div>
             </div>
         </div>
-        <div class="about">
+        <div id="about" class="about">
             <h3>Who Am I ?</h3>
             <p>I'm a full stack web developer with a strong focus on continuous learning. I bring a diverse skill set with the ability to do graphic design in Adobe Photoshop and Illustrator, that I mostly use to make images or logos for websites. I also speak 3 languages: French, English and German. I have a great passion for representing people as well as companies well by producing beautiful and unique websites with a flawless user experience.</p>
             <div class="buttons">
-                <a>Resume</a>
-                <a>Portfolio</a>
+                <a href="./assets/Lilian_Vinel_CV_ENG.pdf" target="_blank">Download CV</a>
+                <a href="#portfolio">Portfolio</a>
             </div>
         </div>
     </section>
