@@ -1,5 +1,6 @@
 html{
     background-color: #f6f8f8;
+    scroll-padding-top: 75px; /* height of sticky header, pour pas cacher une partie du content quand tu utilises une link */
 }
 
 body{
@@ -29,7 +30,7 @@ a {
   /* figure out le fixed menu et ensuite regarde le design */
   
   #menu{
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     width: 100%;
@@ -256,7 +257,7 @@ a {
     background-color: white;
     width: 100%;
     padding: 10% 0;
-    margin: 75px 0 0 0;
+    /* margin: 75px 0 0 0; */
 }
 
 .profile{
@@ -577,6 +578,10 @@ h6{
 }
 
 @media (min-width:641px)  {
+    html{
+        scroll-padding-top: 61px; /* height of sticky header */
+    }
+
     .phoneNav{
         display: none;
     }
@@ -602,7 +607,7 @@ h6{
 
     #home{
         padding: 5% 0;
-        margin-top:61px
+        /* margin-top:61px; */
     }
 
     #home .about{
@@ -872,6 +877,11 @@ h6{
         margin-top: 3%;/*figure out avec Javascript une facon que le margin top soit égal à l'espace entre le body et l'html (donc le margin-right ou left), tout en mettant une max-value de cette même margin-top à 3%*/
     }
 
+    /* #menu{
+        left: 50%;
+        transform: translate(-50%, 0);
+    } */
+
     #portfolio{
         padding: 2% 3% 4% 3%;
     }
@@ -885,4 +895,3 @@ h6{
         height: 271.33px;
     }
 }
-
