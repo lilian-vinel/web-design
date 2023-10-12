@@ -15,12 +15,11 @@
     <div class="test"></div>
     <section id="menu">
         <nav class="pcNav">
-          <a href="#about">About</a>
-          <a href="#resume">Background & Skills</a>
-          <a href="#top" id="logo"><img src="assets/logo.png"/></a>
-          <a href="#portfolio">Portfolio</a>
-          <!-- <a href="#">Download CV</a> -->
-          <a href="#contact">Contact</a>
+          <a class="idLink" href="#about">About</a>
+          <a class="idLink" href="#resume">Background & Skills</a>
+          <a class="idLink" href="#top" id="logo"><img src="assets/logo.png"/></a>
+          <a class="idLink" href="#portfolio">Portfolio</a>
+          <a class="idLink" href="#contact">Contact</a>
           <div class="socials">
             <a href="mailto:lilian.vinel@gmail.com"><i class="fa fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/lilian-vinel/" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -36,10 +35,10 @@
             <div>
                 <div>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#resume">Background & Skills</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a class="cellBtn idLink" href="#about">About</a></li>
+                        <li><a class="cellBtn idLink" href="#resume">Background & Skills</a></li>
+                        <li><a class="cellBtn idLink" href="#portfolio">Portfolio</a></li>
+                        <li><a class="cellBtn idLink" href="#contact">Contact</a></li>
                         <li class="phoneSocials">
                             <a href="mailto:lilian.vinel@gmail.com"><i class="fa fa-envelope"></i></a>
                             <a href="https://www.linkedin.com/in/lilian-vinel/" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -57,7 +56,7 @@
             <h1>Lilian Vinel</h1>
             <h2>Full Stack Web Developper</h2>
                 <div class="buttons">
-                    <a>Get in Touch</a>
+                    <a class="idLink" href="#contact">Get in Touch</a>
                     <a>My LinkedIn</a>
                 </div>
             </div>
@@ -67,7 +66,7 @@
             <p>I'm a full stack web developer with a strong focus on continuous learning. I bring a diverse skill set with the ability to do graphic design in Adobe Photoshop and Illustrator, that I mostly use to make images or logos for websites. I also speak 3 languages: French, English and German. I have a great passion for representing people as well as companies well by producing beautiful and unique websites with a flawless user experience.</p>
             <div class="buttons">
                 <a href="./assets/Lilian_Vinel_CV_ENG.pdf" target="_blank">Download CV</a>
-                <a href="#portfolio">Portfolio</a>
+                <a class="idLink" href="#portfolio">Portfolio</a>
             </div>
         </div>
     </section>
@@ -189,4 +188,6 @@
         </div>
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="index.js"></script>
 </html>
