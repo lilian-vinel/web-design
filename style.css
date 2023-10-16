@@ -51,10 +51,12 @@ a {
     padding: 20px 2% 20px 2%;
   }
 
+@media (hover: hover) and (pointer: fine) {
   .pcNav a:hover{
     color: white;
     background-color: #253439;
   }
+}
   
 #logo{
     padding: 0;
