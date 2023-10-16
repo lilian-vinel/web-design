@@ -594,10 +594,10 @@ h6{
         padding: 20px 2% 20px 2%;
     }
     
-    .pcNav a:hover{
+    /* .pcNav a:hover{
         color: white;
         background-color: #253439;
-    }
+    } */
     
     #menu .pcNav #logo img{
         width: 90px;
