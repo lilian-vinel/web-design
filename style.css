@@ -265,11 +265,12 @@ a {
     width: 280px;
 }
 
-.profile img{
+#home .profile img{
     border-top-right-radius: 47%;
     border-top-left-radius: 47%;
     border:1px solid #253439;
     width: 280px;
+    height: 316px;
 }
 
 .profile h1{
@@ -513,6 +514,8 @@ h6{
 
 #contact .profile img{
     border-radius: 50%;
+    width:225px;
+    height: 225px;
 }
 
 #contact .profile .buttons{
@@ -687,7 +690,8 @@ h6{
     }
 
     #contact img{
-        width: 75%;
+        width: 210px;
+        height: 210px;
     }
 
     #contact .buttons{
@@ -893,4 +897,3 @@ h6{
         height: 271.33px;
     }
 }
-
