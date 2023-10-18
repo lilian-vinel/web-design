@@ -63,10 +63,6 @@ a {
     padding: 0;
 }
 
-#logo img{
-    width: 90px;
-}
-
 #logo:hover{
     background-color: #F6F8F8;
 }
@@ -81,6 +77,7 @@ a {
 
 #menu .pcNav #logo img{
     width: 120px;
+    height:71px;
 }
 
   .socials{
@@ -598,6 +595,7 @@ h6{
     
     #menu .pcNav #logo img{
         width: 90px;
+        height: 53px;
     }
 
     #menu .pcNav a{
@@ -895,3 +893,4 @@ h6{
         height: 271.33px;
     }
 }
+
